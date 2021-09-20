@@ -1,0 +1,16 @@
+.image{
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+    background-position:top; 
+}
+
+.float_left{
+
+text-align: right;
+display: inline-flex;
+padding:-20px;
+margin-top: 20px;
+}
+

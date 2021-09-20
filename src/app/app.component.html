@@ -1,0 +1,23 @@
+<!--programando la "home"-->
+<header>
+
+  <ul>
+    <!--capturamos las rutas con routerLink y etiqueta <a>-->
+    <li><a [routerLink]="['/sobre-mi']" [routerLinkActive]="['actived']">Sobre Mi</a></li>
+    <li><a [routerLink]="['/proyectos']" [routerLinkActive]="['actived']"> proyectos</a></li>
+    <li id="logo"><a href="#">GV</a></li>
+    <li><a [routerLink]="['/crear-proyecto']" [routerLinkActive]="['actived']">Crear proyectos</a></li>
+    <li><a [routerLink]="['/contacto']" [routerLinkActive]="['actived']">Contacto</a></li>
+     
+    </ul>
+
+</header>
+
+<!--cuerpo de la página-->
+<section id="content">
+  <router-outlet></router-outlet>
+</section>
+<footer>
+  Guillermo Visintini desarrolo web&copy;
+</footer>
+

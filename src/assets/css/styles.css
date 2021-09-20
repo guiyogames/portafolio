@@ -1,0 +1,276 @@
+/*Importar fuentes custom*/
+@font-face{
+font-family: "yanone";
+src: url("fonts/yanone.ttf");
+}
+
+@font-face {
+    font-family: "protector";
+    src: url("fonts/protector.ttf");
+}
+
+/*Generales*/
+
+*{
+    margin:0px;
+    padding:0px
+}
+
+body{
+    font-family: "yanone", Arial, Helvetica;
+    font-size: 17px;
+    background: url("../img/pattern.png");
+    background-attachment: fixed;
+}
+/*limpia los flotados entre elementos*/
+.clearfix{
+    float: none;
+    clear: both;
+
+}
+/*barra de navegacion* o cabecera */
+header{
+  width: 100%;
+  height: 90px;
+  background: rgba(53,103,164,0.8);
+  position: fixed;
+  text-transform: uppercase;
+}
+
+header ul{
+    display: block;
+    width: 39%;
+    height: inherit;
+    margin: 0px auto;
+    margin-top: -3px;
+}
+/*display: inline-block; pone las secciones del menú horizonal*/
+header ul li{
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 88px;
+}
+
+header a{
+    display: block;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: inherit;
+    text-decoration: none;
+    color: white;
+    transition: all 300ms;
+}
+
+header a:hover,
+    .actived{
+    background:rgba(0,0,0,0.8)
+}
+/*Logotipo*/
+
+#logo{
+    font-family: "protector";
+    font-size: 30px;
+}
+
+#logo a{
+    transition: color 500ms; transform: 500ms;
+}
+
+header #logo a:hover{
+    background: transparent; 
+    color: black;
+    transform: scale(1.50,1.50);
+}
+/*contenedor principal*/
+#content{
+    min-height:440px;
+    width: 75%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 40px black;
+    border-left:1px solid #b7b7b7;
+    border-right:1px solid #b7b7b7;
+    background:#eeeef2;
+    padding-top: 120px;
+}
+
+/*pie de pagina*/
+
+footer{
+    width: 75%;
+    margin: 0px auto;
+    padding-top: 11px;
+    color:rgba(0,0,0,0.5)
+}
+
+/*Sobre mi*/
+#title{
+    width: 70%;
+    margin: 0px auto;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#title h1{
+    font-family: "protector";
+    font-size: 60px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+#title h2{
+    font-size: 25px;
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/*Css para artículo*/
+article.about{
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+.about h2{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.about p{
+    padding-top: 20px;
+    padding-bottom: 0px;
+    text-align: justify;
+}
+
+.about ul li{
+    padding-top: 17px;
+    padding-bottom: 0px;
+    text-align:center;
+
+}
+
+/* Sección con formulario*/
+
+.container{
+    padding: 50px;
+    padding-top: 10px;
+
+}
+
+.container h2{
+    display: block;
+    border-bottom: 1px sold #ccc;
+    padding-bottom: 10;
+    margin-bottom: 15px;
+}
+
+form{
+
+    width: 80%;
+}
+
+form label{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+/*css para los imput*/
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form textarea{
+    width: 40%;
+    padding: 5px; 
+}
+/*css para el botón*/
+form button,
+form input[type="submit"]{
+    display: block;
+    font-size: 17px;
+    padding: 10px;
+    margin-top: 15px;
+    color: white;
+    background:  rgba(53, 103, 164, 1);
+    border: 1px solid rgba(13,67,133,1); 
+    cursor: pointer;
+}
+/* css hover cambia el color con el cursor*/
+form button:hover,
+form input[type="submit"]:hover{
+    background:  rgba(53, 103, 164, 0.8);
+    border: 1px solid rgba(13,67,133,1);
+}
+/*color del botón deshabilitado*/
+form input[disabled]{
+    opacity: 0.4;
+    cursor: not-allowed;
+   
+}
+/*css para mensaje de error*/
+.form_error{
+    font-size: 15px;
+    padding: 3px;
+    background: red;
+    color: white;
+    margin-left: 5px;
+
+}
+
+.form_ok{
+    font-size: 15px;
+    padding: 3px;
+    background: rgb(0, 255, 76);
+    color: white;
+    margin-left: 5px;
+}
+
+article.proyect{
+        width: 70%;
+        margin: 0px auto;
+        margin-top: 2px;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+.proyect h1{
+
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 25px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 35px;
+    
+}
+
+.proyect h2{
+    text-align: center;
+    font-size: 25px;
+    color: gray;
+    padding-bottom: 25px;
+    margin-bottom: 5px;
+    margin-top: -20px;
+}
+
+.proyect h3{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+    margin-top: 15px;
+}
+
+.proyect p{
+    text-align: center;
+}
+.image2{
+    text-align: center;
+}
+
+.image3{
+    text-align: center;
+}
+
