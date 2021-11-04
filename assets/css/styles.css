@@ -222,7 +222,7 @@ form input[disabled]{
 }
 
 .form_ok{
-    font-size: 15px;
+    font-size: 20px;
     padding: 3px;
     background: rgb(0, 255, 76);
     color: white;
