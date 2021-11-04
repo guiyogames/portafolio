@@ -294,11 +294,9 @@ margin-top: 20px;
 }
 /*letra parrafo del about*/
 .p{
-  letter-spacing: 0.2em;
-  word-spacing: 0.2em;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
   line-height: 1.5em;
-
-  
 }
 
 @media screen and (max-width: 843px){
@@ -307,7 +305,7 @@ margin-top: 20px;
 /* contenido principal */
     #content{
         min-height:440px;
-        width: 75%;
+        width: 100%;
         margin: 0px auto;
         box-shadow: 0px 0px 40px black;
         border-left:1px solid #b7b7b7;
@@ -326,12 +324,16 @@ margin-top: 20px;
         font-size: 35px;
         
     }
-/* pagina del formulario */
+    /* pagina del formulario */
     .container{
         padding: 50px;
         padding-top: 60px;
     
     }
-
+    /* parafo del contenido  */
+    .p{
+        line-height: 1.5em;
+      }
 
 }
+
