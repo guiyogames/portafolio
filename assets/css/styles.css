@@ -1,341 +1,363 @@
 /*Importar fuentes custom*/
-@font-face{
-font-family: "yanone";
-src: url("fonts/yanone.ttf");
+@font-face {
+  font-family: "yanone";
+  src: url("fonts/yanone.ttf");
 }
 
 @font-face {
-    font-family: "protector";
-    src: url("fonts/protector.ttf");
+  font-family: "protector";
+  src: url("fonts/protector.ttf");
 }
 
 /*Generales*/
 
-*{
-    margin:0px;
-    padding:0px
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-body{
-    font-family: "yanone", Arial, Helvetica;
-    font-size: 17px;
-    background: url("../img/pattern.png");
-    background-attachment: fixed;
+body {
+  font-family: "yanone", Arial, Helvetica;
+  font-size: 17px;
+  background: url("../img/pattern.png");
+  background-attachment: fixed;
 }
 /*limpia los flotados entre elementos*/
-.clearfix{
-    float: none;
-    clear: both;
-
+.clearfix {
+  float: none;
+  clear: both;
 }
 /*barra de navegacion* o cabecera */
-header{
+header {
   width: 100%;
   height: 90px;
-  background: rgba(53,103,164,0.8);
+  background: rgba(53, 103, 164, 0.8);
   position: fixed;
   text-transform: uppercase;
 }
 
-header ul{
-    display: block;
-    width: 30%;
-    height: inherit;
-    margin: 0px auto;
-    margin-top: -3px;
+header ul {
+    margin: 20px;
+  display: block;
+  width: 30%;
+  height: inherit;
+  margin: 0px auto;
+  margin-top: -3px;
 }
 /*display: inline-block; pone las secciones del menú horizonal*/
-header ul li{
-    display: inline-block;
-    margin: 0px auto;
-    text-align: center;
-    line-height: 88px;
-    font-size: 23px;
-    
+header ul li {
+  display: inline-block;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 88px;
+  font-size: 23px;
 }
 
-header a{
-    display: block;
-    padding-right: 20px;
-    padding-left: 20px;
-    height: inherit;
-    text-decoration: none;
-    color: white;
-    transition: all 300ms;
+header a {
+  display: block;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: inherit;
+  text-decoration: none;
+  color: white;
+  transition: all 300ms;
 }
 
 header a:hover,
-    .actived{
-    background:rgba(0,0,0,0.8)
+.actived {
+  background: rgba(0, 0, 0, 0.8);
 }
 /*Logotipo*/
 
-#logo{
-    font-family: "protector";
-    font-size: 30px;
+#logo {
+  font-family: "protector";
+  font-size: 30px;
 }
 
-#logo a{
-    transition: color 500ms; transform: 500ms;
+#logo a {
+  transition: color 500ms;
+  transform: 500ms;
 }
 
-header #logo a:hover{
-    background: transparent; 
-    color: black;
-    transform: scale(1.50,1.50);
+header #logo a:hover {
+  background: transparent;
+  color: black;
+  transform: scale(1.5, 1.5);
 }
 /*contenedor principal*/
-#content{
-    min-height:440px;
-    width: 75%;
-    margin: 0px auto;
-    box-shadow: 0px 0px 40px black;
-    border-left:1px solid #b7b7b7;
-    border-right:1px solid #b7b7b7;
-    background:#eeeef2;
-    padding-top: 120px;
+#content {
+  min-height: 440px;
+  width: 75%;
+  margin: 0px auto;
+  box-shadow: 0px 0px 40px black;
+  border-left: 1px solid #b7b7b7;
+  border-right: 1px solid #b7b7b7;
+  background: #eeeef2;
+  padding-top: 120px;
 }
 
 /*pie de pagina*/
 
-footer{
-    width: 75%;
-    margin: 0px auto;
-    padding-top: 11px;
-    color:rgba(0,0,0,0.5)
+footer {
+  padding-top: 20px;
+  width: 75%;
+  margin: 0px auto;
+  padding-top: 11px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 /*Sobre mi*/
-#title{
-    width: 70%;
-    margin: 0px auto;
-    margin-top: 20px;
-    text-align: center;
-    margin-bottom: 100px;
+#title {
+  width: 70%;
+  margin: 0px auto;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 100px;
 }
 
-#title h1{
-    font-family: "protector";
-    font-size: 60px;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
+#title h1 {
+  font-family: "protector";
+  font-size: 60px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
 }
 
-#title h2{
-    font-size: 25px;
-    color: gray;
-    margin-top: 5px;
-    margin-bottom: 5px;
+#title h2 {
+  font-size: 25px;
+  color: gray;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 /*Css para artículo*/
-article.about{
-    width: 70%;
-    margin: 0px auto;
-    margin-bottom: 20px;
-    font-size: 23px;
+article.about {
+  width: 70%;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  font-size: 23px;
 }
 
-.about h2{
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
+.about h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
-.about p{
-    padding-top: 20px;
-    padding-bottom: 0px;
-    text-align: justify;
+.about p {
+  padding-top: 20px;
+  padding-bottom: 0px;
+  text-align: justify;
 }
 
-.about ul li{
-    padding-top: 17px;
-    padding-bottom: 0px;
-    text-align:center;
-
+.about ul li {
+  padding-top: 17px;
+  padding-bottom: 0px;
+  text-align: center;
 }
 
 /* Sección con formulario*/
 
-.container{
-    padding: 50px;
-    padding-top: 10px;
-
+.container {
+  padding: 50px;
+  padding-top: 10px;
 }
 
-.container h2{
-    display: block;
-    border-bottom: 1px sold #ccc;
-    padding-bottom: 10;
-    margin-bottom: 15px;
+.container h2 {
+  display: block;
+  border-bottom: 1px sold #ccc;
+  padding-bottom: 10;
+  margin-bottom: 15px;
 }
 
-form{
-
-    width: 100%;
+form {
+  width: 100%;
 }
 
-form label{
-    display: block;
-    width: 80%;
-    margin-top: 10px;
-    margin-bottom: 5px;
+form label {
+  display: block;
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 /*css para los imput*/
 form input[type="text"],
 form input[type="number"],
 form input[type="email"],
-form textarea{
-    width: 35%;
-    padding: 5px; 
+form textarea {
+  width: 35%;
+  padding: 5px;
 }
 /*css para el botón*/
 form button,
-form input[type="submit"]{
-    display: block;
-    font-size: 17px;
-    padding: 10px;
-    margin-top: 15px;
-    color: white;
-    background:  rgba(53, 103, 164, 1);
-    border: 1px solid rgba(13,67,133,1); 
-    cursor: pointer;
+form input[type="submit"] {
+  display: block;
+  font-size: 17px;
+  padding: 10px;
+  margin-top: 15px;
+  color: white;
+  background: rgba(53, 103, 164, 1);
+  border: 1px solid rgba(13, 67, 133, 1);
+  cursor: pointer;
 }
 /* css hover cambia el color con el cursor*/
 form button:hover,
-form input[type="submit"]:hover{
-    background:  rgba(53, 103, 164, 0.8);
-    border: 1px solid rgba(13,67,133,1);
+form input[type="submit"]:hover {
+  background: rgba(53, 103, 164, 0.8);
+  border: 1px solid rgba(13, 67, 133, 1);
 }
 /*color del botón deshabilitado*/
-form input[disabled]{
-    opacity: 0.4;
-    cursor: not-allowed;
-   
+form input[disabled] {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 /*css para mensaje de error*/
-.form_error{
-    font-size: 15px;
-    padding: 3px;
-    background: red;
-    color: white;
-    margin-left: 5px;
-
+.form_error {
+  font-size: 15px;
+  padding: 3px;
+  background: red;
+  color: white;
+  margin-left: 5px;
 }
 
-.form_ok{
-    font-size: 20px;
-    padding: 3px;
-    background: rgb(0, 255, 76);
-    color: white;
-    margin-left: 5px;
+.form_ok {
+  font-size: 20px;
+  padding: 3px;
+  background: rgb(0, 255, 76);
+  color: white;
+  margin-left: 5px;
 }
 
-article.proyect{
-        width: 70%;
-        margin: 0px auto;
-        margin-top: 2px;
-        margin-bottom: 20px;
-        font-size: 18px;
-    }
-
-.proyect h1{
-
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 25px;
-    padding-top: 20px;
-    margin-bottom: 5px;
-    text-align: center;
-    font-size: 35px;
-    
+article.proyect {
+  width: 70%;
+  margin: 0px auto;
+  margin-top: 2px;
+  margin-bottom: 20px;
+  font-size: 18px;
 }
 
-.proyect h2{
-    text-align: center;
-    font-size: 25px;
-    color: gray;
-    padding-top: 20px;
-    padding-bottom: 25px;
-    margin-bottom: 5px;
-    margin-top: -20px;
+.proyect h1 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 25px;
+  padding-top: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 35px;
 }
 
-.proyect h3{
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 25px;
-    text-align: center;
-    font-size: 20px;
-    color: gray;
-    margin-top: 15px;
+.proyect h2 {
+  text-align: center;
+  font-size: 25px;
+  color: gray;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  margin-bottom: 5px;
+  margin-top: -20px;
+}
+
+.proyect h3 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 25px;
+  text-align: center;
+  font-size: 20px;
+  color: gray;
+  margin-top: 15px;
 }
 /*imagenes angular, html css js*/
-.proyect p{
-    text-align: center;
+.proyect p {
+  text-align: center;
 }
-.image2{
-    text-align: center;
+.image2 {
+  text-align: center;
 }
 
-.image3{
-    text-align: center;
-    margin-top: 35px;
+.image3 {
+  padding-top: 20px;
+  text-align: center;
+  margin-top: 35px;
 }
 /*imagen mi foto*/
-.image{
-    display: block;
-    text-align: center;
-    padding-top: 10px;
-    margin-top: 10px;
-    background-position:top; 
+.image {
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 10px;
+  background-position: top;
 }
 
-.float_left{
-
-text-align: right;
-display: inline-flex;
-padding:-20px;
-margin-top: 20px;
+.float_left {
+  text-align: right;
+  display: inline-flex;
+  padding: -20px;
+  margin-top: 20px;
 }
 /*letra parrafo del about*/
-.p{
+.p {
   letter-spacing: 0.1em;
   word-spacing: 0.1em;
   line-height: 1.5em;
 }
 
-@media screen and (max-width: 843px){
 
 
-/* contenido principal */
-    #content{
-        min-height:440px;
-        width: 100%;
-        margin: 0px auto;
-        box-shadow: 0px 0px 40px black;
-        border-left:1px solid #b7b7b7;
-        border-right:1px solid #b7b7b7;
-        background:#eeeef2;
-        padding-top: 300px;
-    }
-    /* pagina de proyectos */
-    .proyect h1{
 
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 25px;
-        padding-top: 60px;
-        margin-bottom: 5px;
-        text-align: center;
-        font-size: 35px;
-        
-    }
-    /* pagina del formulario */
-    .container{
-        padding: 50px;
-        padding-top: 60px;
-    
-    }
-    /* parafo del contenido  */
-    .p{
-        line-height: 1.5em;
-      }
 
+
+
+
+
+@media screen and (max-width: 820px) {
+  /* contenido principal */
+  #content {
+    min-height: 440px;
+    width: 100%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 40px black;
+    border-left: 1px solid #b7b7b7;
+    border-right: 1px solid #b7b7b7;
+    background: #eeeef2;
+    /* padding-top: 300px; */
+  }
+  /* pagina de proyectos */
+  .proyect h1 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 25px;
+    padding-top: 60px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 35px;
+  }
+  /* pagina del formulario */
+  .container {
+    padding: 50px;
+    padding-top: 60px;
+  }
+  /* parafo del contenido  */
+  .p {
+    line-height: 1.5em;
+  }
+
+  /*Css para artículo*/
+  article.about {
+    width: 100%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    font-size: 23px;
+  }
+
+  header ul {
+    display: block;
+    width: 100%;
+    height: inherit;
+    margin: 0px auto;
+    margin-top: -3px;
+  }
+
+  /* formulario */
+  form input[type="text"],
+  form input[type="number"],
+  form input[type="email"],
+  form textarea {
+    width: 80%;
+    padding: 5px;
+  }
 }
+
 
